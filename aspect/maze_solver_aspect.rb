@@ -16,7 +16,7 @@ class MazeSolverAspect < Aspector::Base
             return {:solved? => false, :details => validation_results[:details] } #To keep consistent output
         end
 
-        return {:details => "Failed execution"}
+        return {:solved? =>false, :details => "Execution failed by unknow reasons"}
     end
 
 end
