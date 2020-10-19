@@ -11,8 +11,8 @@ class MazeSolverValidator
 
         #* Valid values
         valid_values = [Util::Values::VISITED_VALUE, Util::Values::AVAILABLE_SPACE, Util::Values::CHEESE_VALUE, Util::Values::START_POSITION_VALUE]
-        cheese_value = Util::Values::CHEESE_VALUE #Cheese
-        start_value = Util::Values::START_POSITION_VALUE #start_position
+        cheese_value = Util::Values::CHEESE_VALUE
+        start_value = Util::Values::START_POSITION_VALUE
 
         #* Advanced validations
         return { :valid? => false, :details => "Maze must be perfectly rectangular." } unless rectangular_maze?(maze)

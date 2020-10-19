@@ -1,5 +1,5 @@
 require_relative 'maze_solver'
-require_relative '../aspect/maze_solver_aspect' #Without this, Aspector wouldn't be used
+require_relative '../aspect/maze_solver_aspect' # Without this, Aspector wouldn't be used
 
 class AMazeIng
 
@@ -12,7 +12,8 @@ class AMazeIng
         
         #! Ideally, not implemented code should NOT be allowed (like this method)
         # But since this class may look like over-engineering, this is written to show
-        # other kind of behavior that could be contained here
+        # other kind of behavior that could be contained here.
+        # Beside that, this class also work as a wrapper to ensure the use of aspector pipeline.
     end
 
 end

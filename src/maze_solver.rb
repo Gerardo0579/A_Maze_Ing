@@ -45,7 +45,7 @@ class MazeSolver
     end
     
     def self.determine_available_paths(maze, current_position)
-        #Determine available paths orthogonaly
+        # Determine available paths orthogonaly
         available_spaces = Array.new
         valid_states = [Util::Values::AVAILABLE_SPACE, Util::Values::CHEESE_VALUE]
 
