@@ -9,7 +9,7 @@ class MazeSolverAspect < Aspector::Base
         validation_results = MazeSolverValidator.is_maze_valid?(*args, &block)
         
         if validation_results[:valid?]
-            std_output { "Starting Maze Solver" }
+            std_output { "Starting Maze Solver magically" }
             return proxy.call(*args, &block)
         else
             response = validation_results[:details]
