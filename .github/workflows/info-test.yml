@@ -1,0 +1,14 @@
+name: Reusable workflow example
+
+on:
+  workflow_call:
+        
+jobs:
+  info-getter:
+    runs-on: ubuntu-latest
+    steps:
+      - name: my-step
+        run: |
+          echo ${{ github.jobs }}
+          echo ${{ github.workflow }}
+          echo ${{ github.ref }}
